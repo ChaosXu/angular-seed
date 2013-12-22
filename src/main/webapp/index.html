@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>My AngularJS App</title>
-  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
+  <ul class="nav nav-pills" ng-controller="NavController">
+    <li ng-class="activeClass('/home')"><a href="#/home" ng-click="active(this)">首页</a></li>
+    <li ng-class="activeClass('/view2')"><a href="#/view2" >view2</a></li>
+    <li ng-class="activeClass('/admin')"><a href="#/admin">系统管理</a></li>
   </ul>
 
   <div ng-view></div>
