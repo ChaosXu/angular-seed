@@ -8,7 +8,7 @@ angular.module('myApp.controllers', [])
             return $location.path()==path ? "active":"";
         };
     }])
-    .controller('MyCtrl1', [function() {
+    .controller('HomeController', [function() {
 
     }])
     .controller('MyCtrl2', [function() {
@@ -16,4 +16,8 @@ angular.module('myApp.controllers', [])
     }])
     .controller('AdminCtrl', [function() {
 
-    }]);
+    }])
+    .controller('UserController',['$scope','UserService',
+        function($scope,UserService){
+            $scope.users= UserService.query();
+        }]);
