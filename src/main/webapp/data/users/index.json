@@ -1,5 +1,5 @@
 [
-    {"name":"user1","email":"user1@m.com","description":"user1desc"},
-    {"name":"user2","email":"user2@m.com","description":"user2desc"},
-    {"name":"user3","email":"user3@m.com","description":"user3desc"}
+    {"checked":false,"name":"user1","email":"user1@m.com","description":"user1desc"},
+    {"checked":false,"name":"user2","email":"user2@m.com","description":"user2desc"},
+    {"checked":false,"name":"user3","email":"user3@m.com","description":"user3desc"}
 ]

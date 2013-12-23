@@ -16,5 +16,6 @@ config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/admin',{templateUrl:'partials/admin.html',controller:'AdminCtrl'});
     $routeProvider.when('/admin/panel1',{templateUrl:'partials/admin/panel1.html',controller:'AdminPanel1Ctrl'});
     $routeProvider.when('/user',{templateUrl:'partials/user/index.html',controller:'UserController'});
+    $routeProvider.when('/user/add',{templateUrl:'partials/user/add.html',controller:'UserAddController'});
     $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
